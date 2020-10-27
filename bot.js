@@ -33,7 +33,7 @@ client.on('raw', input => { // raw allows me to intercept group chat messages, h
                 if ( Math.floor(Math.random() * 100) + 1 < 10 ) { // sometimes just don't respond
                   return;
                 } else {
-                channel.send(`${response.toLowerCase()}`);
+                channel.send(`${response.toLowerCase()}`); // lower case for more "human"-like typing, at least on discord!
               }
             });
             channel.stopTyping();
